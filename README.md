@@ -1,9 +1,9 @@
 # pytorch-multimodal_sarcasm_detection
 It is the pytorch implementation of paper "Multi-Modal Sarcasm Detection in Twitter with Hierarchical Fusion Model"
 # Overview
-![20201124181750](https://user-images.githubusercontent.com/7517810/100162354-667c1980-2e81-11eb-9d6c-327c47784df0.png)
+![20201108153958](https://user-images.githubusercontent.com/7517810/98483722-b9df3e00-21d8-11eb-9ece-fb05e265bcf5.png)
 
 ## References
-1.  **Translating embeddings for modeling multi-relational data**<br />
-    Bordes, Antoine, Nicolas Usunier, Alberto Garcia-Duran, Jason Weston, and Oksana Yakhnenko. <br />
-    [[link]](https://dl.acm.org/doi/10.5555/2999792.2999923). In Advances in neural information processing systems. (2013)
+1.  **Multi-Modal Sarcasm Detection in Twitter with Hierarchical Fusion Model**<br />
+    Yitao Cai, Huiyu Cai and Xiaojun Wan. <br />
+    [[link]](https://www.aclweb.org/anthology/P19-1239/). In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (pp. 2506-2515).(2019)
