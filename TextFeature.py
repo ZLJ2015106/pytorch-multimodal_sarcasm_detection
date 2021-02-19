@@ -3,7 +3,7 @@ import numpy as np
 import LoadData
 
 class ExtractTextFeature(torch.nn.Module):
-    def __init__(self,text_length,hidden_size):
+    def __init__(self,text_length,hidden_size,dropout_rate=0.2):
         super(ExtractTextFeature, self).__init__()
         self.hidden_size=hidden_size
         self.text_length=text_length
@@ -19,7 +19,7 @@ class ExtractTextFeature(torch.nn.Module):
         self.Linear_4=torch.nn.Linear(200,hidden_size)
 
         # dropout
-        self.dropout=torch.nn.Dropout(0.2)
+        self.dropout=torch.nn.Dropout(dropout_rate)
 
     def forward(self, input,guidence ):
         embedded=self.embedding(input).view(-1, self.text_length, self.embedding_size)
