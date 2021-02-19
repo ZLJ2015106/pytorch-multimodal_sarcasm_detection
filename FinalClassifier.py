@@ -10,12 +10,16 @@ import FuseAllFeature
 #%%
 
 class ClassificationLayer(torch.nn.Module):
-    def __init__(self):
+    def __init__(self,dropout_rate=0):
         super(ClassificationLayer, self).__init__()
         self.Linear_1=torch.nn.Linear(512,256)
         self.Linear_2=torch.nn.Linear(256,1)
+        self.dropout=torch.nn.Dropout(dropout_rate)
+        
     def forward(self,input):
         hidden=self.Linear_1(input)
+        hidden=self.dropout(hidden)
+        
         output=torch.sigmoid(self.Linear_2(hidden))
         return output
 if __name__ == "__main__":
